@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contain a navbar using HTML,Boostrap and JS " />
+  <title>Navbar</title>
+  <!-- Boostrap Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <!-- link ajax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <!-- Custom Styles -->
+  <link href="CSS/index.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MAMBO HOUSE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home" onclick="cerrarNavbar()">INICIO
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About" onclick="cerrarNavbar()">NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#School" onclick="cerrarNavbar()">ESCUELA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact" onclick="cerrarNavbar()">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Home -->
+  <div id="Home" class="Home">
+    <picture class="Home-container">
+      <source media="(max-width:684px)" srcset="./Imagenes/MH-SMALL.jpg">
+      <img class="Home-img" src="./Imagenes/MH-LARGE.jpg">
+    </picture>
+  </div>
+  <!-- About -->
+  <div id="About" class="About">
+    <div class="description">
+      <h1 class="title">¡El ritmo y la pasión de la danza!</h1>
+      <p>Bienvenido/a a Mambo House, una destacada escuela de baile ubicada en León. Con más de 3 años de experiencia,
+        nos hemos convertido en una academia de baile de renombre, reconocida por nuestra excelencia artística y
+        dedicación al arte del mambo.</p>
+      <p>Nuestro enfoque en el mambo nos ha permitido destacar en la escena de la danza, llevándonos a ganar numerosos
+        premios y reconocimientos en competencias tanto a nivel local como nacional. En Mambo House, nos enorgullece ser
+        un referente en la ciudad y ser reconocidos por nuestra calidad de enseñanza, pasión por la danza y el ambiente
+        cálido y acogedor que brindamos a nuestros estudiantes.</p>
+      <p>Detrás del éxito de Mambo House se encuentran los talentosos directores Armando Fonseca y Jana Cervantes. Su
+        experiencia y conocimientos en el mundo del baile han sido fundamentales para establecer una academia de baile
+        de alto nivel en León. Armando y Jana son reconocidos por su habilidad para transmitir su pasión a
+        los estudiantes, creando un entorno de aprendizaje estimulante y divertido.</p>
+      <p>En Mambo House ofrecemos una amplia variedad de clases para todos los niveles, desde principiantes hasta
+        bailarines avanzados. Nuestro equipo de instructores altamente capacitados se dedica a brindar una instrucción
+        técnica y detallada, ayudando a nuestros estudiantes a mejorar sus habilidades y desarrollar su estilo personal.
+      </p>
+      <p>Además de nuestras clases regulares, organizamos eventos especiales, talleres y presentaciones para fomentar el
+        crecimiento artístico de nuestros estudiantes y mantenernos en constante evolución. Creemos en el poder
+        transformador de la danza y en su capacidad para unir a las personas, por lo que en Mambo House promovemos un
+        ambiente inclusivo y amigable donde cada estudiante puede desarrollarse plenamente.</p>
+      <p>Si estás buscando una academia de baile que combine profesionalismo, pasión y un ambiente acogedor, Mambo House
+        es el lugar ideal para ti. ¡Únete a nosotros y descubre el ritmo y la emoción del mambo!</p>
+      <p>¡Ven y baila con nosotros en Mambo House, donde la danza se convierte en una experiencia inolvidable!</p>
+    </div>
+  </div>
+  <!-- Services -->
+  <div id="School" class="School">
+    <div class="School-card">
+      <div class="card-front"></div>
+      <div class="card-back">
+        <h3>Valle de señora</h3>
+      </div>
+    </div>
+    <div class="School-card">
+      <div class="card-front"></div>
+      <div class="card-back">
+        <h3>Valle de señora</h3>
+      </div>
+    </div>
+    <div class="School-card">
+      <div class="card-front"></div>
+      <div class="card-back">
+        <h3>Valle de señora</h3>
+      </div>
+    </div>
+
+  </div>
+  <!-- Contact -->
+  <div id="Contact" class="Contact">
+
+  </div>
+
+  <script src="JS/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
