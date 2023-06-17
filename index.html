@@ -14,8 +14,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./JS/Animations.js"></script>
   <!-- Custom Styles -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+/>
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" rel="stylesheet">
   <link href="CSS/index.css" rel="stylesheet" />
-
 </head>
 
 <body>
@@ -59,7 +64,7 @@
   <!-- About -->
   <div id="About" class="About box">
     <div class="description">
-      <h1 class="title">¡El ritmo y la pasión de la danza!</h1>
+      <h1 class="title">MAMBO HOUSE</h1>
       <p>Bienvenido/a a Mambo House, una destacada escuela de baile ubicada en León. Con más de 3 años de experiencia,
         nos hemos convertido en una academia de baile de renombre, reconocida por nuestra excelencia artística y
         dedicación al arte del mambo.</p>
@@ -87,13 +92,17 @@
   <!-- Services -->
   <div id="School" class="School box">
     <div class="School-card">
-      <div class="card-front"></div>
+      <div class="card-front Sucursal1">
+        <h3>Valle de señora</h3>
+      </div>
       <div class="card-back">
         <h3>Valle de señora</h3>
       </div>
     </div>
-    <div class="School-card">
-      <div class="card-front"></div>
+    <div class="School-card ">
+      <div class="card-front Sucursal2">
+        <h3>Mariano Escobedo</h3>
+      </div>
       <div class="card-back">
         <h3>Valle de señora</h3>
       </div>
@@ -101,7 +110,27 @@
   </div>
   <!-- Contact -->
   <div id="Contact" class="Contact">
+   
+  </div>
 
+  <!-- SocialMedia -->
+  <div class="fabs" onclick="toggleBtn()">
+    <div class="action">
+      <i class="fas fa-plus" id="add"></i>
+      <i class="fas fa-times" id="remove" style="display: none"></i>
+    </div>
+
+    <div class="btns">
+      <a href="https://www.facebook.com/Mambohouse77/?mibextid=ZbWKwL" class="btn" style="background: #3b5999"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <a href="#" class="btn" style="background: #25D366"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+      <a href="https://instagram.com/the.mambohouse?igshid=MzRlODBiNWFlZA==" class="btn" style="background:#e4405f"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </div>
   </div>
 
   <script src="JS/index.js"></script>
